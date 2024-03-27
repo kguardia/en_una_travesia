@@ -1,0 +1,13 @@
+
+.mainSobreMi {
+    .seccionSobreMi {
+        img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+        }
+        p {
+            font-size: $fzpfooter;
+        }
+    }
+}

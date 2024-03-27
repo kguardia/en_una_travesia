@@ -1,0 +1,38 @@
+
+.mainPlanifica {
+    .seccionPlan {
+        .tarjetaPlanInicio {
+            img {
+                width: 600px;
+                height: 400px;
+                object-fit: cover;
+            }
+            h2 {
+                font-weight: $fwBold;
+            }
+            a {
+                text-decoration: none;
+                color: $iconsColor;
+                font-weight: $fwBold;
+                font-size: $fzIcons;
+            }
+            p {
+                font-size: $fzpfooter;
+            }
+        }
+        .tarjetaPlan {
+            img {
+                width: 600px;
+                height: 400px;
+                object-fit: cover;
+            }
+            h3 {
+                font-size: $fzCarrusel;
+                font-weight: $fwBold;
+            }
+            p {
+                font-size: $fzpfooter;
+            }
+        }
+    }
+}

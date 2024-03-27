@@ -1,0 +1,391 @@
+
+/* MEDIAQUERIES // RESPONSIVE */
+
+@media only screen and (max-width: 576px) {
+    .mainIndex {
+        .seccionBienvenida {
+            .gridbienvenida {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 5px;
+                display: grid;
+                /* grid-template-columns: repeat(3, 1fr); */
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 5px;
+                /* align-items: center;
+                justify-items: center; */
+                /* justify-content: center;
+                align-content: center; */
+                place-items: center;
+                grid-template-areas:
+                    'foto'
+                    'titulo'
+                    'parrafo'
+                    'redes';
+    
+                .b1 {
+                    grid-area: titulo;
+                    .tituloPrincipal {
+                        font-family: $mainFont;
+                        font-weight: $fwBold;
+                        text-align: center;
+                        font-size: $fzNavBar;
+                    }
+                }
+                .b2 {
+                    grid-area: parrafo;
+                    p {
+                        font-size: $fznbfooter;
+                        text-align: center;
+                    }
+                }
+                .b3 {
+                    grid-area: redes;
+                    .navRedesSociales {
+                        display: flex;
+                        gap: 10px;
+                        list-style: none;
+                        .nav-item{
+                            .nav-link{
+                                color: $iconsColor;
+                                text-decoration: none;
+                                font-size: $fznbfooter;
+                            }
+                            .nav-link:hover {
+                                color: $buttomgreenColor;
+                            }
+                        }
+                    }
+                }
+                .b4 {
+                    grid-area: foto;
+                    img {
+                        width: 200px;
+                        height: 350px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .seccionIntroduccion {
+            h3 {
+                font-weight: $fwBold;
+            }
+            img {
+                display: none;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }    
+    .mainBlog {
+        .seccionBlog {
+            h3, h2 {
+                font-weight: $fwBold;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .gridblog {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 5px;
+                align-items: center;
+                justify-items: center; 
+                justify-content: center;
+                align-content: center; 
+                place-items: center center;
+                text-align: center;
+                grid-template-areas:
+                    'principal'
+                    'secundaria1'
+                    'secundaria2'
+                    'paginador';
+    
+                .b1 {
+                    grid-area: principal;
+                    .blogPrincipal {
+                        img {
+                            width: auto;
+                            height: 300px;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+                .b2 {
+                    grid-area: secundaria1;
+                    .tarjetaSecundaria {
+                        
+                        img {
+                            width: auto;
+                            height: 300px;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+                .b3 {
+                    grid-area: secundaria2;
+                    .tarjetaSecundaria {
+                        img {
+                            width: 300px;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainPlanifica {
+        .seccionPlan {
+            .tarjetaPlanInicio {
+                img {
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                h2 {
+                    font-weight: $fwBold;
+                }
+                a {
+                    text-decoration: none;
+                    color: $iconsColor;
+                    font-weight: $fwBold;
+                    font-size: $fzIcons;
+                }
+                p {
+                    font-size: $fzpfooter;
+                }
+            }
+            .tarjetaPlan {
+                img {
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                h3 {
+                    font-size: 18px;
+                    font-weight: $fwBold;
+                }
+                p {
+                    font-size: $fzpfooter;
+                }
+            }
+        }
+    }
+    .mainSobreMi {
+        .seccionSobreMi {
+            img {
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+            }
+            p {
+                font-size: $fznbfooter;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .mainIndex {
+        .seccionBienvenida {
+            .gridbienvenida {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 5px;
+                display: grid;
+                /* grid-template-columns: repeat(3, 1fr); */
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 5px;
+                /* align-items: center;
+                justify-items: center; */
+                /* justify-content: center;
+                align-content: center; */
+                place-items: center;
+                grid-template-areas:
+                    'titulo foto'
+                    'parrafo foto'
+                    'redes foto';
+    
+                .b4 {
+                    grid-area: foto;
+                    img {
+                        width: auto;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .mainBlog {
+        .seccionBlog {
+            h3, h2 {
+                font-weight: $fwBold;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .gridblog {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 5px;
+                align-items: center;
+                justify-items: center; 
+                justify-content: center;
+                align-content: center; 
+                place-items: center center;
+                text-align: center;
+                grid-template-areas:
+                    'principal principal'
+                    'secundaria1 secundaria2'
+                    'paginador paginador';
+    
+                .b1 {
+                    grid-area: principal;
+                    .blogPrincipal {
+                        img {
+                            width: 600px;
+                            height: 300px;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+                .b2 {
+                    grid-area: secundaria1;
+                    .tarjetaSecundaria {
+                        
+                        img {
+                            width: 300px;
+                            height: 150px;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+                .b3 {
+                    grid-area: secundaria2;
+                    .tarjetaSecundaria {
+                        img {
+                            width: 300px;
+                            height: 150px;
+                            object-fit: cover;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $iconsColor;
+                            font-weight: $fwBold;
+                            font-size: $fznbfooter;
+                        }
+                        p {
+                            font-size: $fznbfooter;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainPlanifica {
+        .seccionPlan {
+            .tarjetaPlanInicio {
+                img {
+                    width: 600px;
+                    height: 400px;
+                    object-fit: cover;
+                }
+                h2 {
+                    font-weight: $fwBold;
+                }
+                a {
+                    text-decoration: none;
+                    color: $iconsColor;
+                    font-weight: $fwBold;
+                    font-size: $fzIcons;
+                }
+                p {
+                    font-size: $fzpfooter;
+                }
+            }
+            .tarjetaPlan {
+                img {
+                    width: 600px;
+                    height: 400px;
+                    object-fit: cover;
+                }
+                h3 {
+                    font-size: 18px;
+                    font-weight: $fwBold;
+                }
+                p {
+                    font-size: $fzpfooter;
+                }
+            }
+        }
+    }
+    .mainSobreMi {
+        .seccionSobreMi {
+            img {
+                width: 700px;
+                height: fit-content;
+                object-fit: cover;
+            }
+            p {
+                font-size: $fznbfooter;
+            }
+        }
+    }     
+}

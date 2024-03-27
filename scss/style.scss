@@ -1,0 +1,18 @@
+//base//
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/utils';
+
+//components//
+@import 'components/header';
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/footer';
+
+//layout
+@import 'layout/index';
+@import 'layout/blog';
+@import 'layout/contacto';
+@import 'layout/planifica';
+@import 'layout/sobre_mi';
+@import 'layout/mediaqueries';

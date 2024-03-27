@@ -1,0 +1,94 @@
+
+.mainBlog {
+    .seccionBlog {
+        h3, h2 {
+            font-weight: $fwBold;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .gridblog {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 35px;
+            align-items: center;
+            justify-items: center; 
+            justify-content: center;
+            align-content: center; 
+            place-items: center center;
+            text-align: center;
+            grid-template-areas:
+                'principal principal'
+                'secundaria1 secundaria2'
+                'paginador paginador';
+
+            .b1 {
+                grid-area: principal;
+                .blogPrincipal {
+                    img {
+                        width: 900px;
+                        height: 600px;
+                        object-fit: cover;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $iconsColor;
+                        font-weight: $fwBold;
+                        font-size: $fzIcons;
+                    }
+                    p {
+                        font-size: $fzpfooter;
+                    }
+                }
+            }
+            .b2 {
+                grid-area: secundaria1;
+                .tarjetaSecundaria {
+                    
+                    img {
+                        width: 400px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $iconsColor;
+                        font-weight: $fwBold;
+                        font-size: $fzIcons;
+                    }
+                    p {
+                        font-size: $fzpfooter;
+                    }
+                }
+            }
+            .b3 {
+                grid-area: secundaria2;
+                .tarjetaSecundaria {
+                    img {
+                        width: 400px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $iconsColor;
+                        font-weight: $fwBold;
+                        font-size: $fzIcons;
+                    }
+                    p {
+                        font-size: $fzpfooter;
+                    }
+                }
+            }
+            .b4 {
+                grid-area: paginador;
+                .page-link {
+                    color: $mainbgColor;
+                }
+            }
+        }
+    }
+}

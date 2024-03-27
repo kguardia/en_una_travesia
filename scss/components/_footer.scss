@@ -1,0 +1,26 @@
+
+/* FOOTER */
+
+.footerTravesia{
+    background-image: radial-gradient(circle, rgb(1, 63, 96), rgb(171, 255, 247));
+    color:$whiteColor;
+    p {
+        text-align: center;
+        font-size: $fzpfooter;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    .navbarTravesia {
+        list-style: none;
+        .nav-item{
+            .nav-link{
+                color:$whiteColor;
+                text-decoration: none;
+                font-size: $fznbfooter;
+            }
+            .nav-link:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}

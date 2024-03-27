@@ -1,0 +1,38 @@
+
+.seccionContacto {
+    h2 {
+        font-weight: $fwBold;
+    }
+    list-style-type: none;
+    p { 
+        font-size: $fzIcons;
+    }
+    .btn-primary {
+        background-color: $buttomgreenColor;
+        border: $buttomgreenColor;
+    }
+    .btn.btn-primary:hover {
+        background-color: $blackColor;
+        border: $blackColor;
+    }
+}
+
+.bg-contacto {
+    background-image: radial-gradient(circle, rgb(171, 255, 247), rgb(1, 63, 96));
+}
+
+.mainContacto {
+    .seccionMainContacto {
+        h2 {
+            font-weight: $fwBold;
+        }
+        .btn-primary {
+            background-color: $buttomgreenColor;
+            border: $buttomgreenColor;
+        }
+        .btn.btn-primary:hover {
+            background-color: $blackColor;
+            border: $blackColor;
+        }
+    }
+}

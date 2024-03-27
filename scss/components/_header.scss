@@ -1,0 +1,15 @@
+/* HEADER */
+
+.headerTravesia {
+    background-image: radial-gradient(circle, rgb(171, 255, 247), rgb(1, 63, 96));
+    color:$whiteColor;
+    .logo{
+        width:100px;
+    }
+    h2 {
+        margin-bottom: 0px;
+        font-size: $fzHeader;
+        font-weight: $fwHeader;
+        font-family: $secondFont;
+    }
+}
